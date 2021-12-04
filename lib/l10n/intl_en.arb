@@ -1,0 +1,32 @@
+{
+
+  "online_reg": "Онлайновая регистрация",
+  "basic_data": "Основные данные",
+  "family": "Семья",
+  "tariff":"Тарифы",
+
+  "tile": "Титул",
+  "application_form": "Форма обращения",
+  "name": "Имя",
+  "surname": "Фамилия",
+  "email": "Электронная почта",
+  "password": "Пароль",
+  "repeated_password": "повторный пароль",
+
+
+
+  "additional_names": "Дополнительные имена",
+  "gender": "Пол",
+  "male": "Мужской",
+  "female": "Женский",
+  "phone": "Телефон",
+  "personal_data": "Личные данные",
+  "address_data": "Адресные данные",
+  "s_o_optional": "с/о (опционально)",
+  "street_and_number": "Улица и номер",
+  "street_and_hause":"2-я строка - улица и дом (опционально)",
+  "pascode":"Почтовый индекс",
+  "town":"Город",
+  "country":"Страна"
+
+}
