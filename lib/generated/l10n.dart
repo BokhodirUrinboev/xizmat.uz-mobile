@@ -160,6 +160,216 @@ class S {
     );
   }
 
+  /// `Образование`
+  String get education {
+    return Intl.message(
+      'Образование',
+      name: 'education',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- Пожалуйста, выберите -`
+  String get edu_0 {
+    return Intl.message(
+      '- Пожалуйста, выберите -',
+      name: 'edu_0',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `начальная школа`
+  String get edu_1 {
+    return Intl.message(
+      'начальная школа',
+      name: 'edu_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Средняя школа, без степени`
+  String get edu_2 {
+    return Intl.message(
+      'Средняя школа, без степени',
+      name: 'edu_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Окончание средней или старшей школы`
+  String get edu_3 {
+    return Intl.message(
+      'Окончание средней или старшей школы',
+      name: 'edu_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Свидетельство о профессиональном образовании`
+  String get edu_4 {
+    return Intl.message(
+      'Свидетельство о профессиональном образовании',
+      name: 'edu_4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Некоторые университетские курсы`
+  String get edu_5 {
+    return Intl.message(
+      'Некоторые университетские курсы',
+      name: 'edu_5',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `университетская степень`
+  String get edu_6 {
+    return Intl.message(
+      'университетская степень',
+      name: 'edu_6',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `магистерские курсы`
+  String get edu_7 {
+    return Intl.message(
+      'магистерские курсы',
+      name: 'edu_7',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `диплом магистра`
+  String get edu_8 {
+    return Intl.message(
+      'диплом магистра',
+      name: 'edu_8',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Некоторые курсы докторантуры`
+  String get edu_9 {
+    return Intl.message(
+      'Некоторые курсы докторантуры',
+      name: 'edu_9',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `докторская степень`
+  String get edu_10 {
+    return Intl.message(
+      'докторская степень',
+      name: 'edu_10',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Семейное положение`
+  String get family_status {
+    return Intl.message(
+      'Семейное положение',
+      name: 'family_status',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `- Пожалуйста, выберите -`
+  String get f_0 {
+    return Intl.message(
+      '- Пожалуйста, выберите -',
+      name: 'f_0',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Незамужняя`
+  String get f_1 {
+    return Intl.message(
+      'Незамужняя',
+      name: 'f_1',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Женат / Замужем`
+  String get f_2 {
+    return Intl.message(
+      'Женат / Замужем',
+      name: 'f_2',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Разведённый`
+  String get f_3 {
+    return Intl.message(
+      'Разведённый',
+      name: 'f_3',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Вдова`
+  String get f_4 {
+    return Intl.message(
+      'Вдова',
+      name: 'f_4',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Дети`
+  String get unmarried_children_born {
+    return Intl.message(
+      'Дети',
+      name: 'unmarried_children_born',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Персональные данные`
+  String get personal_information {
+    return Intl.message(
+      'Персональные данные',
+      name: 'personal_information',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Место рождения - город`
+  String get palce_brith_city {
+    return Intl.message(
+      'Место рождения - город',
+      name: 'palce_brith_city',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Дополнительные имена`
   String get additional_names {
     return Intl.message(
@@ -285,6 +495,16 @@ class S {
     return Intl.message(
       'Страна',
       name: 'country',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Паспортные данные`
+  String get passport_data {
+    return Intl.message(
+      'Паспортные данные',
+      name: 'passport_data',
       desc: '',
       args: [],
     );

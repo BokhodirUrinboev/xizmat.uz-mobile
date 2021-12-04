@@ -51,7 +51,6 @@ class GenderController extends GetxController {
   var gender = Gender.MALE;
 
   change(g) {
-    print(g);
     gender = g;
     update();
   }

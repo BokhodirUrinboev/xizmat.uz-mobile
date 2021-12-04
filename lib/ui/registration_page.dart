@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:xizmat_uz/generated/l10n.dart';
 import 'package:xizmat_uz/ui/steps/basic_content.dart';
+import 'package:xizmat_uz/ui/steps/family_content.dart';
 
 class RegistrattionPageWidget extends StatefulWidget {
   @override
@@ -60,9 +61,7 @@ class _RegistrattionPageState extends State<RegistrattionPageWidget> {
             ),
             Step(
               title: Text(S.current.family),
-              content: Column(
-                children: <Widget>[],
-              ),
+              content: FamilyContent(),
               isActive: _currentStep >= 0,
               state:
                   _currentStep >= 1 ? StepState.complete : StepState.disabled,

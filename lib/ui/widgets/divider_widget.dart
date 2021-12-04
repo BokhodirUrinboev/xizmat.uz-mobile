@@ -7,20 +7,23 @@ class DividerWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return   Row(
-      children: [
-        Expanded(
-            child: Container(
-              height: 1,
-              color: Colors.black,
-            )),
-        Padding(padding: EdgeInsets.symmetric(horizontal: 10),child: Text(title,style: TextStyle(fontWeight: FontWeight.w400),),),
-        Expanded(
-            child: Container(
-              height: 1,
-              color: Colors.black,
-            )),
-      ],
+    return   Padding(
+      padding: const EdgeInsets.symmetric(vertical: 10.0),
+      child: Row(
+        children: [
+          Expanded(
+              child: Container(
+                height: 1,
+                color: Colors.black,
+              )),
+          Padding(padding: EdgeInsets.symmetric(horizontal: 10),child: Text(title,style: TextStyle(fontSize: 16,fontWeight: FontWeight.w500),),),
+          Expanded(
+              child: Container(
+                height: 1,
+                color: Colors.black,
+              )),
+        ],
+      ),
     );
   }
 }

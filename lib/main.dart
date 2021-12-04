@@ -49,8 +49,7 @@ class MyApp extends StatelessWidget {
                 fontWeight: FontWeight.w600,
                 fontFamily: "SemiCondensed"),
             centerTitle: true,
-            systemOverlayStyle:
-                SystemUiOverlayStyle(statusBarColor: Colors.white,statusBarIconBrightness:  Brightness.light),
+
           )),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );

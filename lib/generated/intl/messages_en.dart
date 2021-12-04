@@ -28,17 +28,49 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Форма обращения"),
         "basic_data": MessageLookupByLibrary.simpleMessage("Основные данные"),
         "country": MessageLookupByLibrary.simpleMessage("Страна"),
+        "edu_0":
+            MessageLookupByLibrary.simpleMessage("- Пожалуйста, выберите -"),
+        "edu_1": MessageLookupByLibrary.simpleMessage("начальная школа"),
+        "edu_10": MessageLookupByLibrary.simpleMessage("докторская степень"),
+        "edu_2":
+            MessageLookupByLibrary.simpleMessage("Средняя школа, без степени"),
+        "edu_3": MessageLookupByLibrary.simpleMessage(
+            "Окончание средней или старшей школы"),
+        "edu_4": MessageLookupByLibrary.simpleMessage(
+            "Свидетельство о профессиональном образовании"),
+        "edu_5": MessageLookupByLibrary.simpleMessage(
+            "Некоторые университетские курсы"),
+        "edu_6":
+            MessageLookupByLibrary.simpleMessage("университетская степень"),
+        "edu_7": MessageLookupByLibrary.simpleMessage("магистерские курсы"),
+        "edu_8": MessageLookupByLibrary.simpleMessage("диплом магистра"),
+        "edu_9": MessageLookupByLibrary.simpleMessage(
+            "Некоторые курсы докторантуры"),
+        "education": MessageLookupByLibrary.simpleMessage("Образование"),
         "email": MessageLookupByLibrary.simpleMessage("Электронная почта"),
+        "f_0": MessageLookupByLibrary.simpleMessage("- Пожалуйста, выберите -"),
+        "f_1": MessageLookupByLibrary.simpleMessage("Незамужняя"),
+        "f_2": MessageLookupByLibrary.simpleMessage("Женат / Замужем"),
+        "f_3": MessageLookupByLibrary.simpleMessage("Разведённый"),
+        "f_4": MessageLookupByLibrary.simpleMessage("Вдова"),
         "family": MessageLookupByLibrary.simpleMessage("Семья"),
+        "family_status":
+            MessageLookupByLibrary.simpleMessage("Семейное положение"),
         "female": MessageLookupByLibrary.simpleMessage("Женский"),
         "gender": MessageLookupByLibrary.simpleMessage("Пол"),
         "male": MessageLookupByLibrary.simpleMessage("Мужской"),
         "name": MessageLookupByLibrary.simpleMessage("Имя"),
         "online_reg":
             MessageLookupByLibrary.simpleMessage("Онлайновая регистрация"),
+        "palce_brith_city":
+            MessageLookupByLibrary.simpleMessage("Место рождения - город"),
         "pascode": MessageLookupByLibrary.simpleMessage("Почтовый индекс"),
+        "passport_data":
+            MessageLookupByLibrary.simpleMessage("Паспортные данные"),
         "password": MessageLookupByLibrary.simpleMessage("Пароль"),
         "personal_data": MessageLookupByLibrary.simpleMessage("Личные данные"),
+        "personal_information":
+            MessageLookupByLibrary.simpleMessage("Персональные данные"),
         "phone": MessageLookupByLibrary.simpleMessage("Телефон"),
         "repeated_password":
             MessageLookupByLibrary.simpleMessage("повторный пароль"),
@@ -51,6 +83,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "surname": MessageLookupByLibrary.simpleMessage("Фамилия"),
         "tariff": MessageLookupByLibrary.simpleMessage("Тарифы"),
         "tile": MessageLookupByLibrary.simpleMessage("Титул"),
-        "town": MessageLookupByLibrary.simpleMessage("Город")
+        "town": MessageLookupByLibrary.simpleMessage("Город"),
+        "unmarried_children_born": MessageLookupByLibrary.simpleMessage("Дети")
       };
 }

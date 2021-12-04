@@ -28,9 +28,7 @@ class BasicContent extends StatelessWidget {
         InputField(
           title: S.current.phone,
         ),
-       const SizedBox(height: 10,),
         DividerWidget(title: S.current.address_data,),
-        const SizedBox(height: 10,),
         InputField(title: S.current.street_and_number,),
         InputField(title: S.current.street_and_hause,),
         InputField(title: S.current.pascode,),

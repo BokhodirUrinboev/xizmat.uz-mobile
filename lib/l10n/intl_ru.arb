@@ -18,6 +18,8 @@
   "phone": "Телефон",
   "personal_data": "Личные данные",
   "address_data": "Адресные данные",
+  "personal_information":"Персональные данные",
+  "palce_brith_city": "Место рождения - город",
   "s_o_optional": "с/о (опционально)",
   "street_and_number": "Улица и номер",
   "street_and_hause":"2-я строка - улица и дом (опционально)",

@@ -36,9 +36,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "name": MessageLookupByLibrary.simpleMessage("Имя"),
         "online_reg":
             MessageLookupByLibrary.simpleMessage("Онлайновая регистрация"),
+        "palce_brith_city":
+            MessageLookupByLibrary.simpleMessage("Место рождения - город"),
         "pascode": MessageLookupByLibrary.simpleMessage("Почтовый индекс"),
         "password": MessageLookupByLibrary.simpleMessage("Пароль"),
         "personal_data": MessageLookupByLibrary.simpleMessage("Личные данные"),
+        "personal_information":
+            MessageLookupByLibrary.simpleMessage("Персональные данные"),
         "phone": MessageLookupByLibrary.simpleMessage("Телефон"),
         "repeated_password":
             MessageLookupByLibrary.simpleMessage("повторный пароль"),
