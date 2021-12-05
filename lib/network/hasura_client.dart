@@ -17,4 +17,10 @@ class HasuraClient {
  Future duery(String document)  {
     return  _client().query(document);
   }
+
+  Future mutation({String document="", dynamic variables})  {
+    return  _client().mutation(document,variables: variables);
+  }
+
+
 }
