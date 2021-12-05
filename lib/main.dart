@@ -8,6 +8,7 @@ import 'package:get/get_utils/get_utils.dart';
 import 'package:hive/hive.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:xizmat_uz/auth/login_page.dart';
+import 'package:xizmat_uz/ui/constants.dart';
 import 'package:xizmat_uz/ui/home_page.dart';
 
 import 'generated/l10n.dart';
@@ -49,7 +50,7 @@ class MyApp extends StatelessWidget {
             brightness: Brightness.light,
             backgroundColor: Colors.white,
             appBarTheme: const AppBarTheme(
-              color: Colors.white,
+              color: appColor,
               iconTheme: IconThemeData(color: Colors.black),
               titleTextStyle: TextStyle(
                   color: Colors.black,
@@ -57,34 +58,8 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.w600,
                   fontFamily: "SemiCondensed"),
               centerTitle: true,
-
             )),
-        home: HomePage() // const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
+        home: LoginPage() // const MyHomePage(title: 'Flutter Demo Home Page'),
+        );
   }
 }
-//
-// class MyHomePage extends StatefulWidget {
-//   const MyHomePage({Key? key, required this.title}) : super(key: key);
-//   final String title;
-//
-//   @override
-//   State<MyHomePage> createState() => _MyHomePageState();
-// }
-//
-// class _MyHomePageState extends State<MyHomePage> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//         primary: true,
-//         appBar: AppBar(
-//           title: Text(S.current.online_reg),
-//
-//           elevation: 0,
-//         ),
-//         body: Container(
-//
-//               child: LoginPage(),)
-//         );
-//   }
-// }

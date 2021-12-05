@@ -1,7 +1,8 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:xizmat_uz/generated/l10n.dart';
 import 'package:xizmat_uz/network/auth_servise.dart';
+import 'package:xizmat_uz/ui/Home_page.dart';
 
 import 'package:xizmat_uz/ui/registration_page.dart';
 
@@ -10,8 +11,13 @@ enum LoginType { LOGIN, REGISTER }
 class LoginPage extends StatefulWidget {
   LoginType loginType;
   AuthService apiService = AuthService();
+  String title;
 
-  LoginPage({Key? key, this.loginType = LoginType.LOGIN}) : super(key: key);
+  LoginPage(
+      {Key? key,
+      this.loginType = LoginType.LOGIN,
+      this.title = "Авторизоваться"})
+      : super(key: key);
 
   @override
   _LoginPageState createState() => _LoginPageState();
@@ -34,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: true,
-        title: Text("Login"),
+        title: Text(widget.title),
         elevation: 0,
       ),
       body: SingleChildScrollView(
@@ -54,13 +60,13 @@ class _LoginPageState extends State<LoginPage> {
                         loginController,
                         Icon(Icons.person_outline,
                             size: 30, color: Color(0xffA6B0BD)),
-                        "Username",
+                        S.current.email,
                         false),
                     _inputField(
                         passwordController,
                         Icon(Icons.lock_outline,
                             size: 30, color: Color(0xffA6B0BD)),
-                        "Password",
+                        S.current.password,
                         true),
                     _loginBtn(),
                     _signUp()
@@ -152,19 +158,19 @@ class _LoginPageState extends State<LoginPage> {
                 email: loginController.text,
                 password: passwordController.text,
                 onComplate: () {
-                  Get.offAll(RegistrattionPageWidget());
+                  Get.offAll(HomePage());
                 });
           else
             widget.apiService.register(
                 email: loginController.text,
                 password: passwordController.text,
                 onComplate: () {
-                  Get.offAll(RegistrattionPageWidget());
+                  Get.offAll(HomePage());
                 });
         },
         padding: EdgeInsets.symmetric(vertical: 20),
         child: Text(
-          "SIGN IN",
+          widget.title,
           style: TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.w800,
@@ -182,10 +188,11 @@ Widget _signUp() {
     onPressed: () => {
       Get.to(LoginPage(
         loginType: LoginType.REGISTER,
+        title: "Регистрация",
       ))
     },
     child: Text(
-      "SIGN UP NOW",
+      "Регистрация",
       style: TextStyle(
         color: Color(0xFF008FFF),
         fontWeight: FontWeight.w800,

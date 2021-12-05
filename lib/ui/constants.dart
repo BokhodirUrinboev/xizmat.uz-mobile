@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:xizmat_uz/generated/l10n.dart';
 
 List<String> eduDropDown = [
@@ -23,3 +24,4 @@ List<String> familyStatusDropDown = [
 ];
 
 
+const Color appColor = Color(0xffFFC547);

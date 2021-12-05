@@ -29,4 +29,17 @@ class LocaleService {
 
     box!.put("id", id);
   }
+
+  setBalance(String balance) {
+    openHive();
+    double bl = double.parse(balance.replaceAll(",", "").replaceAll("\$", ""));
+
+    box!.put("balance", bl);
+  }
+
+  double getBalance() {
+    openHive();
+
+    return box!.get("balance");
+  }
 }

@@ -7,20 +7,23 @@ class HasuraClient {
   HasuraConnect _client() {
     var token = service.getToken();
     HasuraConnect connect =
-    HasuraConnect('https://hasura-8c530141.nhost.app/v1/graphql', headers: {
-      'Authorization':token,
+        HasuraConnect('https://hasura-8c530141.nhost.app/v1/graphql', headers: {
+      'Authorization': token,
     });
 
     return connect;
   }
 
- Future duery(String document)  {
-    return  _client().query(document);
+  Future duery(String document) {
+    return _client().query(document);
   }
 
-  Future mutation({String document="", dynamic variables})  {
-    return  _client().mutation(document,variables: variables);
+  Future mutation({String document = "", dynamic variables}) {
+    return _client().mutation(document, variables: variables);
   }
 
-
+  Future<Snapshot<dynamic>> subscription(String document) {
+    return _client().subscription(document);
+  }
 }
+
