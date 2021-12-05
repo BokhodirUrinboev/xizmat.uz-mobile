@@ -5,17 +5,19 @@ class InputField extends StatelessWidget {
   String helperText = "";
   TextInputType inputType;
 
+  ValueChanged valueChanged;
 
-  InputField(
-      {Key? key,
-      this.title = "",
-      this.helperText = "",
-      this.inputType = TextInputType.text})
+
+  InputField({Key? key,
+    this.title = "",
+    this.helperText = "",
+    this.inputType = TextInputType.text,
+    required this.valueChanged,
+   })
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-
     return Container(
       padding: EdgeInsets.symmetric(vertical: 3),
       child: Column(
@@ -34,6 +36,7 @@ class InputField extends StatelessWidget {
           Container(
             height: 40,
             child: TextFormField(
+            onChanged: valueChanged,
               // obscureText: isPassword,
               keyboardType: TextInputType.visiblePassword,
               style: TextStyle(fontSize: 15),

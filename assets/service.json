@@ -1,0 +1,30 @@
+{
+  "address_info": {
+    "city":"",
+    "address": "",
+    "country":"",
+    "postal_code": ""
+  },
+  "passport_data": {
+    "passport_date": "",
+    "expiration_date": "",
+    "passport_number": "",
+    "passport_country": ""
+  },
+  "personal_data": {
+    "sex": "",
+    "name": "",
+    "phone": "",
+    "surname": ""
+  },
+  "biographic_data": {
+    "education": "",
+    "city_of_birth": "",
+    "date_of_birth": "",
+    "children_count":"",
+    "marital_status": "",
+    "country_of_birth":""
+  }
+}
+
+

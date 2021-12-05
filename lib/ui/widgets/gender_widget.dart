@@ -6,7 +6,9 @@ import 'package:xizmat_uz/generated/l10n.dart';
 enum Gender { MALE, FEMALE }
 
 class GenderWidget extends StatefulWidget {
-  GenderWidget({Key? key}) : super(key: key);
+  ValueChanged valueChanged;
+
+  GenderWidget({Key? key,required this.valueChanged}) : super(key: key);
 
   @override
   _GenderWidgetState createState() => _GenderWidgetState();
@@ -18,6 +20,8 @@ class _GenderWidgetState extends State<GenderWidget> {
     return GetBuilder<GenderController>(
         init: GenderController(),
         builder: (value) {
+
+          widget.valueChanged(value.gender.toString().toLowerCase());
           return Row(
             children: [
               Row(

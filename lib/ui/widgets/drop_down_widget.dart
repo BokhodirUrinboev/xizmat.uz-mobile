@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-
-
 class DropDownWidget extends StatefulWidget {
   String title;
   List<String> items;
+  ValueChanged selectedItem;
 
   DropDownWidget(
       {Key? key,
       this.title = "",
-      required this.items})
+      required this.items,
+      required this.selectedItem})
       : super(key: key);
 
   @override
@@ -75,6 +75,7 @@ class _DropDownWidgetState extends State<DropDownWidget> {
                       fontWeight: FontWeight.w500),
                 ),
                 onChanged: (s) {
+                  widget.selectedItem(s);
                   setState(() {
                     _chosenValue = s!;
                   });
